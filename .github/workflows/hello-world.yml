@@ -21,7 +21,7 @@ jobs:
         run: ls -l ${{ github.workspace }}      
         
       - name: switch to MyHome directory      
-        run: cd MyHome
+        run: cd ${{ github.workspace }}/MyHome
 
       - name: List all files after switching directory
         run: ls -a

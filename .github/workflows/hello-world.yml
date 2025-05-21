@@ -30,4 +30,6 @@ jobs:
         run: pwd
         
       - name: list text.txt contest
-        run: echo "$(cat test.txt)"
+        run: |
+          cd MyHome
+          echo "$(cat test.txt)"

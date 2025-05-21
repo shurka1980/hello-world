@@ -10,6 +10,12 @@ jobs:
     steps:
       - name: check out repository code
         uses: actions/checkout@v4
-      - run: echo "$(cat hello_world.txt)"
-      - run: cd MyHome
+
+      - name: list hello_world.txt file content
+        run: echo "$(cat hello_world.txt)"
+      - name: switch to MyHome directory
+        run: cd MyHome
+      - name: Show me where I am 
+        run: pwd
+      - name: list text.txt contest
       - run: echo "$(cat test.txt)"

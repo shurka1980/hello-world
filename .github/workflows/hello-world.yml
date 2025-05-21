@@ -16,6 +16,9 @@ jobs:
 
       - name: List all files before switching directory
         run: ls -a
+
+      - name: one level up
+        run: cd..
         
       - name: switch to MyHome directory      
         run: cd MyHome

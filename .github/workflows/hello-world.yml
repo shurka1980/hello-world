@@ -13,9 +13,12 @@ jobs:
 
       - name: list hello_world.txt file content
         run: echo "$(cat hello_world.txt)"
-      - name: switch to MyHome directory
+        
+      - name: switch to MyHome directory      
         run: cd MyHome
+        
       - name: Show me where I am 
         run: pwd
+        
       - name: list text.txt contest
-      - run: echo "$(cat test.txt)"
+        run: echo "$(cat test.txt)"

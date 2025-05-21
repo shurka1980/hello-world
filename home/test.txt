@@ -1,2 +1,0 @@
-This message is from home directory test text file.
-Second line

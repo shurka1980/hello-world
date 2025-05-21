@@ -17,8 +17,8 @@ jobs:
       - name: List all files before switching directory
         run: ls -a
 
-      - name: one level up
-        run: cd ..
+      - name: List repository content
+        run: ls -l ${{ github.workspace }}      
         
       - name: switch to MyHome directory      
         run: cd MyHome

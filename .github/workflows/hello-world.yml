@@ -11,3 +11,5 @@ jobs:
       - name: check out repository code
         uses: actions/checkout@v4
       - run: echo "$(cat hello_world.txt)"
+      - run: cd home
+      - run: echo "$(cat test.txt)"

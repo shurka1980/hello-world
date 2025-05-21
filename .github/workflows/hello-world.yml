@@ -18,7 +18,7 @@ jobs:
         run: ls -a
 
       - name: one level up
-        run: cd..
+        run: cd ..
         
       - name: switch to MyHome directory      
         run: cd MyHome

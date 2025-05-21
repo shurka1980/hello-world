@@ -13,23 +13,7 @@ jobs:
 
       - name: list hello_world.txt file content
         run: echo "$(cat hello_world.txt)"
-
-      - name: List all files before switching directory
-        run: ls -a
-
-      - name: List repository content
-        run: ls -l ${{ github.workspace }}      
-        
-      - name: switch to MyHome directory      
-        run: cd ${{ github.workspace }}/MyHome
-
-      - name: List all files after switching directory
-        run: ls -a
-        
-      - name: Show me where I am 
-        run: pwd
         
       - name: list text.txt contest
-        run: |
-          cd MyHome
-          echo "$(cat test.txt)"
+        run: echo "$(cat test.txt)"
+        working-directory: MyHome

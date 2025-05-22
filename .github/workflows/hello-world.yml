@@ -17,3 +17,6 @@ jobs:
       - name: list text.txt contest
         run: echo "$(cat test.txt)"
         working-directory: MyHome
+      
+      - name: list text.txt contest again
+        run: echo "$(cat test.txt)"
